@@ -1,9 +1,18 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Hero from "../components/Hero.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Majestic">
   <main>
-    <div></div>
+    <header class="w-full py-8">
+      <Navbar />
+    </header>
+    <body>
+      <div class="my-40 py-4">
+        <Hero />
+      </div>
+    </body>
   </main>
 </Layout>
