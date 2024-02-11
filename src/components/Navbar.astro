@@ -1,0 +1,18 @@
+---
+import Button from "./Button.astro";
+import { styles, text, links } from "../utils/constants";
+---
+
+<nav class="flex justify-center">
+  <ul class="flex justify-center items-center gap-8 text-primary text-lg">
+    <img />
+    {text.navbar.map((item) => <li>{item.text}</li>)}
+    <li>
+      <Button
+        tail={styles.whatsapp}
+        text={text.contact}
+        link={links.whatsapp}
+      />
+    </li>
+  </ul>
+</nav>
