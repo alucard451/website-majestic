@@ -1,3 +1,7 @@
-<p class="text-lg text-secondary py-2">
+---
+const { styles } = Astro.props;
+---
+
+<p class={styles}>
   <slot />
 </p>

@@ -1,12 +1,8 @@
 ---
-interface Props {
-  text: string;
-  link: string;
-  tail: string;
-}
-const { text, link, tail } = Astro.props;
+const { text, link, style } = Astro.props;
 ---
 
-<a class={tail} href={link}>
+<a class={`flex gap-2 ${style}`} href={link} target="_blank">
+  <img src="/images/whatsapp.svg" />
   {text}
 </a>

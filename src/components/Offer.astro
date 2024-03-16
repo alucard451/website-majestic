@@ -1,0 +1,58 @@
+---
+import { links, styles, text } from "../utils/constants";
+import Button from "./Button.astro";
+import Content from "./text/Content.astro";
+import Title from "./text/Title.astro";
+---
+
+<div class="px-56">
+  <div class="flex h-[550px] items-center gap-16">
+    <div class="w-2/5 bg-slate-300 h-full"></div>
+    <div class="flex flex-col w-3/5 bg-clip-text">
+      <Title style={styles.textAboutUs}>{text.aboutUs.title}</Title>
+      <Content styles={styles.contentAboutUs}>{text.aboutUs.content}</Content>
+    </div>
+  </div>
+  <div class="mt-28">
+    <div class="grid grid-cols-6 py-4">
+      <div class="col-span-1 flex justify-between items-center">
+        <span
+          class="font-bold text-6xl bg-clip-text text-transparent bg-gradient-to-t from-[#BD5DF5] to-[#FF65CC]"
+        >
+          Misión
+        </span>
+        <div
+          class="h-full w-2 bg-gradient-to-t from-[#BD5DF5] to-[#FF65CC] self-end"
+        >
+        </div>
+      </div>
+      <p class="col-span-5 pl-6 font-bold text-lg">
+        Nuestra misión es brindar la mejor solución integral para sus
+        necesidades de impresión con excelente calidad, ofreciendo precios
+        altamente competitivos, tecnología de punta, equipo humano comprometido,
+        servicios con la aplicación de técnicas modernas, excelente actitud y
+        mejora continua.
+      </p>
+    </div>
+    <div class="grid grid-cols-6 py-4 mt-20">
+      <p class="col-span-5 pr-6 font-bold text-lg text-end">
+        Nuestra visión es ser una agencia competitiva y creativa que brinda
+        calidad de impresión y excelentes diseños muy creativos de acuerdo a la
+        actualidad, al gusto y satisfacción de nuestros clientes. Es por esto
+        que hacemos nuestro trabajo a conciencia con un compromiso de alta
+        calidad y efectividad.
+      </p>
+      <div class="col-span-1 flex justify-between items-center">
+        <div
+          class="h-full w-2 bg-gradient-to-t from-[#F99114] to-[#F9D423] self-end"
+        >
+        </div>
+        <span
+          class="font-bold text-6xl bg-clip-text text-transparent bg-gradient-to-t from-[#F99114] to-[#F9D423]"
+        >
+          Visión
+        </span>
+      </div>
+    </div>
+  </div>
+</div>

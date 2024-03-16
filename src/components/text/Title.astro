@@ -1,3 +1,7 @@
-<h1 class="font-bold text-6xl text-primary py-2">
+---
+const { style } = Astro.props;
+---
+
+<h1 class=`${style}`>
   <slot />
 </h1>
