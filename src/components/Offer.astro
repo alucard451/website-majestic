@@ -5,19 +5,21 @@ import Content from "./text/Content.astro";
 import Title from "./text/Title.astro";
 ---
 
-<div class="px-56">
-  <div class="flex h-[550px] items-center gap-16">
-    <div class="w-2/5 bg-slate-300 h-full"></div>
-    <div class="flex flex-col w-3/5 bg-clip-text">
+<div class="lg:px-56 px-4">
+  <div class="flex lg:h-[550px] items-center lg:gap-16">
+    <div class="lg:w-2/5 bg-slate-300 h-full"></div>
+    <div class="flex flex-col lg:w-3/5 bg-clip-text">
       <Title style={styles.textAboutUs}>{text.aboutUs.title}</Title>
       <Content styles={styles.contentAboutUs}>{text.aboutUs.content}</Content>
     </div>
   </div>
-  <div class="mt-28">
-    <div class="grid grid-cols-6 py-4">
-      <div class="col-span-1 flex justify-between items-center">
+  <div class="lg:mt-28 mt-10">
+    <div class="lg:grid lg:grid-cols-6 py-4">
+      <div
+        class="lg:col-span-1 flex lg:justify-between justify-center items-center"
+      >
         <span
-          class="font-bold text-6xl bg-clip-text text-transparent bg-gradient-to-t from-[#BD5DF5] to-[#FF65CC]"
+          class="font-bold lg:text-6xl text-5xl bg-clip-text text-transparent bg-gradient-to-t from-[#BD5DF5] to-[#FF65CC]"
         >
           Misión
         </span>
@@ -26,7 +28,9 @@ import Title from "./text/Title.astro";
         >
         </div>
       </div>
-      <p class="col-span-5 pl-6 font-bold text-lg">
+      <p
+        class="lg:col-span-5 lg:pl-6 font-bold lg:text-lg text-sm lg:text-start text-center"
+      >
         Nuestra misión es brindar la mejor solución integral para sus
         necesidades de impresión con excelente calidad, ofreciendo precios
         altamente competitivos, tecnología de punta, equipo humano comprometido,
@@ -34,21 +38,29 @@ import Title from "./text/Title.astro";
         mejora continua.
       </p>
     </div>
-    <div class="grid grid-cols-6 py-4 mt-20">
-      <p class="col-span-5 pr-6 font-bold text-lg text-end">
+    <div
+      class="lg:hidden block w-full h-2 bg-gradient-to-t from-slate-400 to-slate-300"
+    >
+    </div>
+    <div class="lg:grid grid-cols-6 flex flex-col-reverse py-4 lg:mt-20 mt-5">
+      <p
+        class="lg:col-span-5 lg:pr-6 font-bold lg:text-lg text-sm lg:text-end text-center"
+      >
         Nuestra visión es ser una agencia competitiva y creativa que brinda
         calidad de impresión y excelentes diseños muy creativos de acuerdo a la
         actualidad, al gusto y satisfacción de nuestros clientes. Es por esto
         que hacemos nuestro trabajo a conciencia con un compromiso de alta
         calidad y efectividad.
       </p>
-      <div class="col-span-1 flex justify-between items-center">
+      <div
+        class="lg:col-span-1 flex lg:justify-between justify-center items-center"
+      >
         <div
           class="h-full w-2 bg-gradient-to-t from-[#F99114] to-[#F9D423] self-end"
         >
         </div>
         <span
-          class="font-bold text-6xl bg-clip-text text-transparent bg-gradient-to-t from-[#F99114] to-[#F9D423]"
+          class="font-bold lg:text-6xl text-5xl bg-clip-text text-transparent bg-gradient-to-t from-[#F99114] to-[#F9D423]"
         >
           Visión
         </span>

@@ -1,11 +1,11 @@
 export const styles = {
     whatsapp : "text-white font-semibold px-8 bg-[#25D366] text-lg py-3 px-4 rounded-3xl",
     whatsappToR : "text-white font-semibold px-8 bg-gradient-to-r from-[#77E596] to-[#95F365] text-lg py-3 px-4 rounded-3xl",
-    textHero: "font-bold bg-gradient-to-r from-[#1FA5FF] to-[#0AEAF5] text-transparent bg-clip-text text-6xl py-2",
-    contentHero: "text-lg font-bold text-[#242424] py-2",
-    textAboutUs: "font-bold bg-gradient-to-r from-[#37E472] to-[#00F4C9] text-transparent bg-clip-text text-6xl py-2 text-end",
-    contentAboutUs: "text-lg font-bold text-[#242424] py-2 text-end",
-    socialText : "text-center font-semibold bg-gradient-to-t from-[#00D4FF] to-[#206DE5] text-transparent bg-clip-text text-3xl py-2"
+    textHero: "lg:font-bold font-semibold bg-gradient-to-r from-[#1FA5FF] to-[#0AEAF5] text-transparent bg-clip-text lg:text-6xl text-5xl py-2 text-center lg:text-start",
+    contentHero: "lg:text-lg text-sm lg:font-bold font-medium text-[#242424] py-2 text-center lg:text-start",
+    textAboutUs: "lg:font-bold font-semibold bg-gradient-to-r from-[#37E472] to-[#00F4C9] text-transparent bg-clip-text lg:text-6xl text-5xl py-2 lg:text-end text-center",
+    contentAboutUs: "lg:text-lg text-sm lg:font-bold font-medium text-[#242424] py-2 lg:text-end text-center",
+    socialText : "text-center font-semibold bg-gradient-to-t from-[#00D4FF] to-[#206DE5] text-transparent bg-clip-text lg:text-3xl text-2xl py-2"
 
 }
 
