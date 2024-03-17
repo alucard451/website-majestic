@@ -4,7 +4,8 @@ export const styles = {
     textHero: "font-bold bg-gradient-to-r from-[#1FA5FF] to-[#0AEAF5] text-transparent bg-clip-text text-6xl py-2",
     contentHero: "text-lg font-bold text-[#242424] py-2",
     textAboutUs: "font-bold bg-gradient-to-r from-[#37E472] to-[#00F4C9] text-transparent bg-clip-text text-6xl py-2 text-end",
-    contentAboutUs: "text-lg font-bold text-[#242424] py-2 text-end"
+    contentAboutUs: "text-lg font-bold text-[#242424] py-2 text-end",
+    socialText : "text-center font-semibold bg-gradient-to-t from-[#00D4FF] to-[#206DE5] text-transparent bg-clip-text text-3xl py-2"
 
 }
 
