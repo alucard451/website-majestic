@@ -17,12 +17,15 @@ export const text = {
     navbar: [
         {
             text: "Nosotros",
+            route: "aboutUs"
         },
         {
             text: "Servicios",
+            route: "services"
         },
         {
             text: "Ubícanos",
+            route: "location"
         }
     ],
     hero: {

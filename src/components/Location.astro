@@ -7,11 +7,12 @@ import Budget from "./Budget.astro";
 
 <div
   class="px-5 w-full flex xl:max-w-screen-xl lg:flex-row flex-col items-center gap-5 lg:max-w-screen-lg relative"
+  id="location"
 >
   <div class="flex flex-col bg-clip-text flex-1 w-full gap-5">
     <Title style={styles.textHero}>{text.location.title}</Title>
     <Content styles={styles.contentHero}>{text.location.content.main}</Content>
-    <div class="flex justify-center lg:justify-start gap-5">
+    <div class="flex justify-center lg:justify-start gap-5 flex-wrap">
       <Budget
         icon="/images/price.svg"
         text={text.location.content.valueOffering.price}
@@ -53,6 +54,6 @@ import Budget from "./Budget.astro";
       style="border:0"
       allowfullscreen=""
       loading="lazy"
-      class="absolute top-0 left-0 rounded-xl"></iframe>
+      class="lg:absolute top-0 left-0 rounded-xl"></iframe>
   </div>
 </div>

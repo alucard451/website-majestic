@@ -11,7 +11,9 @@ import { styles, text, links } from "../utils/constants";
     <ul class="flex items-center justify-around gap-10">
       {
         text.navbar.map((item) => (
-          <li class="font-medium text-lg">{item.text}</li>
+          <li class="font-medium text-lg">
+            <a href={`#${item.route}`}>{item.text}</a>
+          </li>
         ))
       }
       <Button

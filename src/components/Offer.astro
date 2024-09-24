@@ -5,8 +5,8 @@ import Content from "./text/Content.astro";
 import Title from "./text/Title.astro";
 ---
 
-<div class="px-5 lg:max-w-screen-lg xl:max-w-screen-xl h-full">
-  <div class="flex items-center lg:gap-4">
+<div class="px-5 lg:max-w-screen-lg xl:max-w-screen-xl h-full" id="aboutUs">
+  <div class="flex lg:flex-row flex-col items-center lg:gap-4">
     <div class="flex flex-col lg:w-3/6 bg-clip-text">
       <Title style={styles.textAboutUs}>{text.aboutUs.title}</Title>
       <div class="flex flex-col gap-5">
@@ -20,18 +20,18 @@ import Title from "./text/Title.astro";
     </div>
     <div class="flex gap-4">
       <div class="flex flex-col py-5 gap-4">
-        <div class="h-[180px] w-[270px] rounded-2xl">
+        <div class="h-[100px] md:h-[180px] w-[150px] md:w-[270px] rounded-2xl">
           <img src="images/offer-3.png" class="w-full h-full" />
         </div>
-        <div class="h-[400px] w-[270px] rounded-2xl">
+        <div class="h-[300px] md:h-[400px] w-[150px] md:w-[270px] rounded-2xl">
           <img src="images/offer-4.png" class="w-full h-full" />
         </div>
       </div>
       <div class="flex flex-col gap-4">
-        <div class="h-[400px] w-[270px] rounded-2xl">
+        <div class="h-[300px] md:h-[400px] w-[150px] md:w-[270px] rounded-2xl">
           <img src="images/offer-2.png" class="w-full h-full" />
         </div>
-        <div class="h-[230px] w-[270px] rounded-2xl">
+        <div class="h-[100px] md:h-[230px] w-[150px] md:w-[270px] rounded-2xl">
           <img src="images/offer-1.png" class="w-full h-full rounded-2xl" />
         </div>
       </div>
