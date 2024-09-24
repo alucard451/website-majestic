@@ -3,23 +3,27 @@ import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar.astro";
 import Hero from "../components/Hero.astro";
 import Offer from "../components/Offer.astro";
-import Social from "../components/Social.astro";
+import Location from "../components/Location.astro";
+import Services from "../components/Services.astro";
 ---
 
 <Layout title="Imprenta Majestic">
-  <main>
-    <header class="w-full py-8">
+  <main class="flex flex-col w-full">
+    <header class="w-full py-8 flex justify-center">
       <Navbar />
     </header>
     <body>
-      <div class="lg:my-20 my-4 lg:py-4">
+      <div class="lg:my-20 my-4 flex justify-center">
         <Hero />
       </div>
-      <div class="lg:my-10 my-8 lg:py-4">
+      <div class="lg:my-10 my-8 flex justify-center">
         <Offer />
       </div>
-      <div class="lg:my-10 my-8 lg:py-4">
-        <Social />
+      <div class="lg:my-10 my-8 flex justify-center">
+        <Services />
+      </div>
+      <div class="lg:my-10 my-8 flex justify-center">
+        <Location />
       </div>
     </body>
     <footer></footer>

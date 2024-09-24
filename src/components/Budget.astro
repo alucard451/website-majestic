@@ -1,0 +1,16 @@
+---
+const { text, icon } = Astro.props;
+---
+
+<span
+  class="inline-block p-[2px] bg-gradient-to-r from-[#FF90DA] to-[#D081FF] rounded-lg"
+>
+  <span class="flex items-center gap-2 bg-white rounded-lg px-2 py-0.5">
+    <img src={icon} alt="Icon" class="rounded-lg" />
+    <span
+      class="bg-gradient-to-r from-[#FF90DA] to-[#D081FF] bg-clip-text text-transparent font-bold rounded-lg"
+    >
+      {text}
+    </span>
+  </span>
+</span>

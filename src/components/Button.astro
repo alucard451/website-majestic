@@ -2,7 +2,13 @@
 const { text, link, style } = Astro.props;
 ---
 
-<a class={`flex gap-2 ${style}`} href={link} target="_blank">
-  <img src="/images/whatsapp.svg" />
-  {text}
-</a>
+<button>
+  <a
+    class={`flex gap-2 items-center justify-center ${style}`}
+    href={link}
+    target="_blank"
+  >
+    <img src="/images/whatsapp.svg" />
+    {text}
+  </a>
+</button>
