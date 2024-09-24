@@ -5,65 +5,35 @@ import Content from "./text/Content.astro";
 import Title from "./text/Title.astro";
 ---
 
-<div class="lg:px-56 px-4">
-  <div class="flex lg:h-[550px] items-center lg:gap-16">
-    <div class="lg:w-2/5 bg-slate-300 h-full"></div>
-    <div class="flex flex-col lg:w-3/5 bg-clip-text">
+<div class="px-5 lg:max-w-screen-lg xl:max-w-screen-xl h-full">
+  <div class="flex items-center lg:gap-4">
+    <div class="flex flex-col lg:w-3/6 bg-clip-text">
       <Title style={styles.textAboutUs}>{text.aboutUs.title}</Title>
-      <Content styles={styles.contentAboutUs}>{text.aboutUs.content}</Content>
+      <div class="flex flex-col gap-5">
+        <Content styles={styles.contentAboutUs}>{text.aboutUs.content}</Content>
+        <Content styles={styles.contentAboutUs}>
+          Con dedicación a la excelencia, impulsamos la visión de nuestros
+          clientes proporcionando diseños innovadores que satisfagan las
+          demandas actuales de nuestros clientes.
+        </Content>
+      </div>
     </div>
-  </div>
-  <div class="lg:mt-28 mt-10">
-    <div class="lg:grid lg:grid-cols-6 py-4">
-      <div
-        class="lg:col-span-1 flex lg:justify-between justify-center items-center"
-      >
-        <span
-          class="font-bold lg:text-6xl text-5xl bg-clip-text text-transparent bg-gradient-to-t from-[#BD5DF5] to-[#FF65CC]"
-        >
-          Misión
-        </span>
-        <div
-          class="h-full w-2 bg-gradient-to-t from-[#BD5DF5] to-[#FF65CC] self-end"
-        >
+    <div class="flex gap-4">
+      <div class="flex flex-col py-5 gap-4">
+        <div class="h-[180px] w-[270px] rounded-2xl">
+          <img src="images/offer-3.png" class="w-full h-full" />
+        </div>
+        <div class="h-[400px] w-[270px] rounded-2xl">
+          <img src="images/offer-4.png" class="w-full h-full" />
         </div>
       </div>
-      <p
-        class="lg:col-span-5 lg:pl-6 font-bold lg:text-lg text-sm lg:text-start text-center"
-      >
-        Nuestra misión es brindar la mejor solución integral para sus
-        necesidades de impresión con excelente calidad, ofreciendo precios
-        altamente competitivos, tecnología de punta, equipo humano comprometido,
-        servicios con la aplicación de técnicas modernas, excelente actitud y
-        mejora continua.
-      </p>
-    </div>
-    <div
-      class="lg:hidden block w-full h-2 bg-gradient-to-t from-slate-400 to-slate-300"
-    >
-    </div>
-    <div class="lg:grid grid-cols-6 flex flex-col-reverse py-4 lg:mt-20 mt-5">
-      <p
-        class="lg:col-span-5 lg:pr-6 font-bold lg:text-lg text-sm lg:text-end text-center"
-      >
-        Nuestra visión es ser una agencia competitiva y creativa que brinda
-        calidad de impresión y excelentes diseños muy creativos de acuerdo a la
-        actualidad, al gusto y satisfacción de nuestros clientes. Es por esto
-        que hacemos nuestro trabajo a conciencia con un compromiso de alta
-        calidad y efectividad.
-      </p>
-      <div
-        class="lg:col-span-1 flex lg:justify-between justify-center items-center"
-      >
-        <div
-          class="h-full w-2 bg-gradient-to-t from-[#F99114] to-[#F9D423] self-end"
-        >
+      <div class="flex flex-col gap-4">
+        <div class="h-[400px] w-[270px] rounded-2xl">
+          <img src="images/offer-2.png" class="w-full h-full" />
         </div>
-        <span
-          class="font-bold lg:text-6xl text-5xl bg-clip-text text-transparent bg-gradient-to-t from-[#F99114] to-[#F9D423]"
-        >
-          Visión
-        </span>
+        <div class="h-[230px] w-[270px] rounded-2xl">
+          <img src="images/offer-1.png" class="w-full h-full rounded-2xl" />
+        </div>
       </div>
     </div>
   </div>
